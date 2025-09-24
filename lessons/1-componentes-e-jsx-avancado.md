@@ -83,3 +83,19 @@ export default TonightsPlan;
 ```
 
 ## Ouvinte de Eventos e Manipuladores de Eventos em um Componente
+- Podemos executar algum código em resposta a interações com a interface
+- Por convenção, começam com a palavra "handle" seguida pelo tipo de evento manipulado
+
+```js
+import React from 'react';
+
+function SubmitButton() {
+    function handleClick() {
+        alert('Submission Successful.');
+    }
+    return <button onClick={handleClick}>Submit</button>
+}
+
+export default SubmitButton;
+```
+
